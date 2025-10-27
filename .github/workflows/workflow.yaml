@@ -6,6 +6,7 @@ jobs :
         steps :
             - name : test job
               run : echo "welcome all"
+            - name : checkout
+              uses : actions/checkout@v4
             - name : readme content
-
               run : cat README.md
