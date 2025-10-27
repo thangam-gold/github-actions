@@ -2,7 +2,7 @@ name : git workflow
 on : push
 jobs :
     test-job :
-        runs-on : ubuntu:lastest
+        runs-on : ubuntu
         steps :
             - name : test job
               run : echo"welcome all"
