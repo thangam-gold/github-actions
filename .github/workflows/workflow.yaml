@@ -2,9 +2,10 @@ name : git workflow
 on : push
 jobs :
     test-job :
-        runs-on : ubuntu
+        runs-on : ubuntu-latest
         steps :
             - name : test job
               run : echo "welcome all"
             - name : readme content
+
               run : cat README.md
