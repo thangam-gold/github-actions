@@ -1,0 +1,10 @@
+name : git workflow
+on : push
+jobs :
+    test-job :
+        runs-on : ubuntu:lastest
+        steps :
+            - name : test job
+              run : echo"welcome all"
+            - name : readme content
+              run : cat README.md
