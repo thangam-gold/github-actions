@@ -7,7 +7,7 @@ jobs :
             - name : build job
               run : |
                     echo "welcome all"
-                    cat README.md
+                    
     test-job :
         runs-on : ubuntu-lastest
         
@@ -16,5 +16,5 @@ jobs :
               run : |
              
                     echo "welcome all"
-                    cat README.md
+                   
          
