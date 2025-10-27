@@ -23,7 +23,7 @@ jobs :
             - name : test job
               run : |
                   cat artifact.txt
-                  echo "welcome all test" >>artifact.txt
+                  echo "welcome all test" >> artifact.txt
     deploy-job :
         runs-on : ubuntu-latest
         needs: test-job
@@ -34,6 +34,6 @@ jobs :
             - name : deploy job
               run : |
                   cat artifact.txt
-                  echo "welcome all deploy" >>artifact.txt
+                  echo "welcome all deploy" >> artifact.txt
                    
          
