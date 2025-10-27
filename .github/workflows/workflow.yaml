@@ -34,6 +34,6 @@ jobs :
             - name : deploy job
               run : |
                   cat artifact.txt
-                  echo "welcome all deploy"
+                  echo "welcome all deploy" >>artifact.txt
                    
          
