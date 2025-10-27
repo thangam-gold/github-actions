@@ -23,6 +23,7 @@ jobs :
             - name : test job
               run : |
                   cat artifact.txt
+                  echo -e "\nAppending test message:"
                   echo "welcome all test" >> artifact.txt
             - name : updated artifact
               uses: actions/upload-artifact@v4
