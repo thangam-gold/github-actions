@@ -7,7 +7,8 @@ jobs :
             - name : build job
               run : |
                     echo "welcome all" > artifact.txt
-            - uses: actions/upload-artifact@v4
+            - name : upload artifact
+              uses: actions/upload-artifact@v4
               with:
                 name : file artifact
                 path : artifact.txt
