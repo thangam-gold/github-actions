@@ -24,7 +24,7 @@ jobs :
               run : |
                   cat artifact.txt
                   echo "welcome all" >>artifact.txt
-     deploy-job :
+    deploy-job :
         runs-on : ubuntu-latest
         needs: test-job
         steps :
